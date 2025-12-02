@@ -1,5 +1,5 @@
 defmodule MagicWord.MixProject do
-    use Mix.MixProject
+    use Mix.Project
 
     def project do
         [
@@ -25,4 +25,5 @@ defmodule MagicWord.MixProject do
             {:jason, "~> 1.4"} # JSON parser
         ]
     end
+
 end
