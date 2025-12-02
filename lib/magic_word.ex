@@ -32,7 +32,7 @@ defmodule MagicWord do
     end
 
     get "/" do
-        result = "span style=`color:red`> Try the magic word \"caleb\"</span>"
+        result = "<span style=`color:red`> Try the magic word \"caleb\"</span>"
         send_resp(conn, 200, page(result))
     end
 
@@ -51,4 +51,5 @@ defmodule MagicWord do
     match _ do
         send_resp(conn, 404, "Not found")
     end
+
 end
